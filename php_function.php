@@ -1,4 +1,6 @@
- function http_post_data($url, $data_string) {  
+ <?php
+
+function http_post_data($url, $data_string) {  
   
         $ch = curl_init();  
         curl_setopt($ch, CURLOPT_POST, 1);  
@@ -31,3 +33,4 @@ function init_curl($url,$data=array())
     return $res;
 }
 
+?>
